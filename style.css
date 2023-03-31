@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap');
+
+:root {
+    --bg-dark: #2d3142;
+    --bg-dark-blue: #4f5d75;
+    --bg-grey: #bfc0c0;
+    --bg-white-grey: #eaebeb;
+    --bg-orange: #ef8354;
+    --bg-white: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-dark-blue);
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    color: var(--bg-white);
+    font-family: 'Righteous', cursive;
+}
+
+h1::after {
+    content: '"';
+    position: absolute;
+    top: 4px;
+    left: 130px;
+    color: var(--bg-orange);
+}
+
+h1::before {
+    content: '"';
+    position: absolute;
+    top: 4px;
+    right: 130px;
+    color: var(--bg-orange);
+}
+
+li {
+
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--bg-white);
+}
+
+button {
+    background-color: var(--bg-dark);
+    color: var(--bg-white);
+    width: 70px;
+    height: 30px;
+}
+
+table {
+    border: 2px solid var(--bg-dark-blue);
+}
+
+thead {
+    background-color: var(--bg-dark-blue);
+    color: var(--bg-white);
+}
+
+td {
+    border: 2px solid var(--bg-dark-blue);
+}
+
+tfoot {
+    background-color: var(--bg-dark-blue);
+    color: var(--bg-white);
+}
+
+.--section-one article {
+    width: 70%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.--section-one article img {
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+
+.--section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.--bg-grey {
+    background-color: var(--bg-white-grey);
+}
+
+hr {
+    background-image: url(img-12.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    border-radius: 10px;
+    width: 80%;
+
+}
+
+section h2 {
+    text-align: center;
+}
+
+.--section-two {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.--section-two article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 1px 11px 42px -1px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 1px 11px 42px -1px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 1px 11px 42px -1px rgba(0, 0, 0, 0.56);
+}
+
+.--section-two article img {
+    width: 100%;
+    height: 150px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #4f5d75;
+    color: var(--bg-white);
+
+}
+
+footer a {
+    color: var(--bg-orange);
+}
+
+footer fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin-bottom: 5px;
+}
+
+footer fieldset fieldset {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--bg-white);
+}
+
+footer input {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+option {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+@media screen and (min-width: 680px) {
+    header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: space-evenly;
+        background-color: var(--bg-dark-blue);
+    }
+
+    ul {
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        font-size: 1.2em;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .--section-two {
+        width: 80%;
+    }
+
+    .--section-two article {
+        width: 40%;
+    }
+
+    button:hover {
+        background-color: var(--bg-orange);
+    }
+
+    li:hover {
+        background-color: #ef8354;
+        padding: 5px 20px;
+        border-radius: 15px;
+    }
+}

@@ -1,15 +1,180 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link css here only when ccs is not imported in js yet -->
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
-    <title>Hello</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- <script src="./js/app.js" type="module"></script> -->
-  </body>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="bonne appetit">
+  <link rel="stylesheet" href="style.css">
+  <title>Bon app</title>
+</head>
+
+<body>
+  <header>
+    <h1>bon app</h1>
+    <nav>
+      <ul>
+        <li><a href="#first-section">plats</a></li>
+        <li><a href="#second-section">blog</a></li>
+        <li><a href="#form">contact</a></li>
+      </ul>
+      <button>dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="center">nos abonnements</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>bronze</th>
+            <th>silver</th>
+            <th>gold</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1 repas par semaine</td>
+            <td>3 repas par semaine</td>
+            <td>5 repas par semaine</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>29 euros/mois</td>
+            <td>79 euros/mois</td>
+            <td>149 euros/mois</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="--section-one" id="first-section">
+      <h2 class="center">les plats a la carte</h2>
+      <article class="--bg-grey">
+        <img src="img-01.jpg" alt="première image">
+        <h3>un super titre</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sint tempora inventore nisi ab quo ducimus,
+          dolore amet hic rerum odio reiciendis vitae obcaecati nesciunt! Voluptas, odio. Vel, inventore nobis?</p>
+      </article>
+
+      <article>
+        <img src="img-02.jpg" alt="deuxième image">
+        <h3>un super titre</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sint tempora inventore nisi ab quo ducimus,
+          dolore amet hic rerum odio reiciendis vitae obcaecati nesciunt! Voluptas, odio. Vel, inventore nobis?</p>
+      </article>
+
+      <article class="--bg-grey">
+        <img src="img-03.jpg" alt="troisième image">
+        <h3>un super titre</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sint tempora inventore nisi ab quo ducimus,
+          dolore amet hic rerum odio reiciendis vitae obcaecati nesciunt! Voluptas, odio. Vel, inventore nobis?</p>
+      </article>
+
+      <article>
+        <img src="img-04.jpg" alt="quatrième image">
+        <h3>un super titre</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sint tempora inventore nisi ab quo ducimus,
+          dolore amet hic rerum odio reiciendis vitae obcaecati nesciunt! Voluptas, odio. Vel, inventore nobis?</p>
+      </article>
+
+      <article class="--bg-grey">
+        <img src="img-05.jpg" alt="cinquième image">
+        <h3>un super titre</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sint tempora inventore nisi ab quo ducimus,
+          dolore amet hic rerum odio reiciendis vitae obcaecati nesciunt! Voluptas, odio. Vel, inventore nobis?</p>
+      </article>
+    </section>
+
+    <hr>
+    <section class="--section-two" id="second-section">
+      <h2>blog</h2>
+      <div>
+        <article>
+          <img src="pic01.jpg" alt="first picture">
+          <h3>un super titre</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, earum! Tempore id cumque dolorem
+            asperiores est fugit inventore nulla! Nostrum ratione harum voluptas reiciendis cum eos nesciunt nulla minus
+            blanditiis.</p>
+        </article>
+
+        <article>
+          <img src="pic02.jpg" alt="second picture">
+          <h3>un super titre</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, earum! Tempore id cumque dolorem
+            asperiores est fugit inventore nulla! Nostrum ratione harum voluptas reiciendis cum eos nesciunt nulla minus
+            blanditiis.</p>
+        </article>
+
+        <article>
+          <img src="pic03.jpg" alt="third picture">
+          <h3>un super titre</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, earum! Tempore id cumque dolorem
+            asperiores est fugit inventore nulla! Nostrum ratione harum voluptas reiciendis cum eos nesciunt nulla minus
+            blanditiis.</p>
+        </article>
+
+        <article>
+          <img src="pic04.jpg" alt="fourth picture">
+          <h3>un super titre</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, earum! Tempore id cumque dolorem
+            asperiores est fugit inventore nulla! Nostrum ratione harum voluptas reiciendis cum eos nesciunt nulla minus
+            blanditiis.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3 id="form">formulaire de contact</h3>
+    <p>Pour plus de détail vous pouvez consultez notre site <a href="https://www.edenschool.fr/">ici</a></p>
+    <form>
+      <fieldset>
+        <h4>informations de contact</h4>
+        <fieldset>
+          <legend>quel est votre age</legend>
+          <label for="12-14"><input type="radio" checked>12-14</label>
+          <label for="15-17"><input type="radio">15-17</label>
+          <label for="18-19"><input type="radio">18-19</label>
+        </fieldset>
+        <label>name :<input type="text"></label><br>
+        <label>email :<input type="email"></label>
+      </fieldset>
+
+      <fieldset>
+        <h4>votre jeu préféré</h4>
+
+        <label>choisissez une console :<select name="consoles">
+            <option disabled>--choisissez une console--</option>
+            <option>ps4</option>
+            <option>xbox</option>
+            <option>switch</option>
+          </select>
+        </label><br>
+
+        <label>choisissez un jeu :<select name="games" placeholder="--choisissez une console--">
+            <option disabled>--choisissez un jeu--</option>
+            <option>resident evil</option>
+            <option>silent hill</option>
+            <option>phasmophobia</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <h4>votre message</h4>
+        <textarea cols="30" rows="5" placeholder="Saisissez votre message"></textarea>
+        <label>cryptage du message<input type="password"></label>
+      </fieldset>
+      <button type="submit">Envoyer</button>
+    </form>
+
+  </footer>
+</body>
+
 </html>
